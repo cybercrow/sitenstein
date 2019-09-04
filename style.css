@@ -1,0 +1,39 @@
+h1, h2 {
+  text-align: center;
+}
+
+body {
+  font-family: serif;
+  background-color: rgb(237,222,199);
+  text-align: justify
+  margin-top: 100px;
+  margin-left : 50px;
+  margin-right : 50px;
+}
+
+ul {
+  list-style: none;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  grid-gap: 10px;
+}
+
+li {
+
+}
+
+li a {
+  color: rgb(213,213,213);
+  text-decoration : none;
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(186,146,3);
+}
+
+article {
+  margin-left : 50px;
+  margin-right : 50px;
+}
