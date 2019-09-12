@@ -8,12 +8,13 @@ h1, h2 {
 }
 
 h1 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Alegreya SC', serif;
   display: inline-block;
   font-size: 50px;
 }
 
 h2 {
+  font-family: 'Old Standard TT', serif;
   font-size: 40px;
   margin: 0px 0px 40px 0px;
 }
@@ -24,6 +25,7 @@ article {
 
 p {
   text-indent: 20px;
+  font-family: 'Alegreya SC', serif;
 }
 
 body {
@@ -39,7 +41,7 @@ ul {
 }
 
 li {
-  font-family: 'Amatic SC', serif;
+  font-family: 'Marck Script', cursive;
   font-size: 30px;
   display: inline-block;
   margin: 20px 20px 20px 0px;
