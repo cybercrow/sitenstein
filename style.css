@@ -11,6 +11,7 @@ h1 {
   font-family: 'Amatic SC', cursive;
   display: inline-block;
   font-size: 50px;
+  padding: 100px;
 }
 
 h2 {
@@ -59,6 +60,6 @@ article {
   padding : 50px;
 }
 
-@media query {
+@media query (700 < width < 1200){
 
 }
