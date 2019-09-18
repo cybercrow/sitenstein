@@ -30,11 +30,7 @@ p {
 }
 
 body {
-<<<<<<< HEAD
   margin: 50px 250px 0px 250px;
-=======
-  margin: 50px 15px 0px 15px;
->>>>>>> 028d7b454c0e06db07d6741e326e58ba298ce8f8
   font-family: open-sans;
   background-color: rgb(215,215,215);
   text-align: justify;
