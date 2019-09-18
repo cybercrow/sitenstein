@@ -3,21 +3,19 @@
   padding: 0;
 }
 
-h1, h2 {
-  text-align: left;
-}
-
 h1 {
   font-family: 'Alegreya SC', serif;
-  display: inline-block;
   font-size: 50px;
-  padding: 100px;
+  padding: 130px 0;
+  text-align: center;
+  letter-spacing: 11px;
 }
 
 h2 {
   font-family: 'Alegreya SC', serif;
   font-size: 40px;
   margin: 0px 0px 40px 0px;
+  text-align: left;
 }
 
 article {
@@ -30,13 +28,9 @@ p {
 }
 
 body {
-<<<<<<< HEAD
   margin: 50px 250px 0px 250px;
-=======
-  margin: 50px 15px 0px 15px;
->>>>>>> 028d7b454c0e06db07d6741e326e58ba298ce8f8
   font-family: open-sans;
-  background-color: rgb(215,215,215);
+  background-color: rgb(233,223,185);
   text-align: justify;
 }
 
@@ -55,14 +49,15 @@ li {
 li a {
   color: rgb(20,20,20);
   text-decoration : none;
+  padding: 20px;
 }
 
 nav {
-  text-align: left;
+  background-color: rgb(204,195,160);
 }
 
 article {
-  background-color: rgb(238,238,238);
+  background-color: rgb(233,223,185);
   padding : 50px;
   border-radius: 25px;
 }
