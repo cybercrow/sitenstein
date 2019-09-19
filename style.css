@@ -8,8 +8,8 @@ h1 {
 
 h2 {
   font-size: 40px;
-  margin: 0px 0px 40px 0px;
-  text-align: left;
+  margin: 0px 0px 0px 0px;
+  text-align: right;
 }
 
 .vignette {
@@ -39,6 +39,8 @@ main {
 ul {
   list-style: none;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 li {
