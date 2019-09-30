@@ -78,11 +78,11 @@ article {
 }
 
 dl {
-  display: flex;
+  display: grid;
 }
 
 dt {
-
+  padding: 30px;
 }
 
 @media (min-width: 900px) {
