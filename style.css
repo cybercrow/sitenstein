@@ -1,3 +1,7 @@
+aheader {
+  display: grid;
+}
+
 h1 {
   font-family: 'Alegreya SC', serif;
   font-size: 50px;
@@ -37,6 +41,7 @@ main {
 }
 
 ul {
+  display: flex;
   list-style: none;
   overflow: hidden;
   margin: 0;
@@ -47,7 +52,6 @@ li {
   font-family: 'Marck Script', cursive;
   font-family: 'Alegreya SC', serif;
   font-size: 30px;
-  display: inline-block;
   margin: 20px 0px 20px 0px;
 }
 
@@ -78,11 +82,24 @@ article {
 }
 
 dl {
-  display: grid;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  overflow: visible;
 }
 
 dt {
-  padding: 30px;
+  flex: 0 0 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+dd {
+  flex:0 0 50%;
+  margin-left: auto;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 @media (min-width: 900px) {
