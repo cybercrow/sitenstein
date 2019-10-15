@@ -1,4 +1,4 @@
-aheader {
+header {
   display: grid;
 }
 
@@ -13,12 +13,13 @@ h1 {
 h2 {
   font-size: 40px;
   margin: 0px 0px 0px 0px;
-  text-align: right;
+  text-align: center;
 }
 
 .vignette {
-  display: block;
-  margin: 0px auto;
+  margin: auto;
+  max-width: 50%;
+  max-height: 50%;
 }
 
 article {
@@ -31,16 +32,16 @@ p {
 
 body {
   font-family: 'Alegreya SC', serif;
-  background-color: rgb(233,223,185);
+  color: #443235;
+  background-color: #e6ddde;
 }
 
 main {
-  text-align: justify;
   margin: 50px 230px 0px 230px;
 }
 
 ul {
-  display: flex;
+  text-align: center;
   list-style: none;
   overflow: hidden;
   margin: 0;
@@ -65,7 +66,7 @@ a {
   text-decoration: none;
 }
 
-a:visited {
+body>*>a:visited {
   color: rgb(200, 200, 200);
   text-decoration: none;
 }
@@ -75,15 +76,9 @@ nav {
 }
 
 article {
-  background-color: rgb(233,223,185);
   padding : 50px;
   border-radius: 25px;
 }
-
-@media (min-width: 600px) {
-  body {
-    margin: 10px 20px 0px 20px;
-  }
 
   article {
     padding: 20px;
@@ -92,25 +87,35 @@ article {
 
 dl {
   display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  overflow: visible;
+    flex-flow: row;
+    flex-wrap: wrap;
+    overflow: visible;
 }
 
 dt {
+  border-bottom: 1px dotted #000;
+  display: inline-block;
+    min-width: 600px;
+
   flex: 0 0 50%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  padding: 20px;
+ text-overflow: ellipsis;
+ overflow: hidden;
 }
 
 dd {
+  display: inline;
+  margin: 0;
+
   flex:0 0 50%;
-  margin-left: auto;
-  text-align: left;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  padding: 20px;
+ margin-left: auto;
+ text-align: left;
+ text-overflow: ellipsis;
+ overflow: hidden;
+}
+
+dd:after{
+  display: block;
+  content: '';
 }
 
 @media (min-width: 900px) {
@@ -119,13 +124,13 @@ dd {
 
 @media (min-width: 1200px) {
   body {
-    margin: 10px 250px 0px 250px;
+
   }
 }
 
 @media (min-width: 1800px) {
   body {
-    margin: 10px 500px 0px 500px;
+
   }
 }
 
