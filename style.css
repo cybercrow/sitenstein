@@ -1,3 +1,8 @@
+@font-face {
+font-family: "American Typewriter";
+src: url("ATR.ttf");
+}
+
 header {
   display: grid;
 }
@@ -32,6 +37,8 @@ p {
 
 body {
   font-family: 'Alegreya SC', serif;
+  font-weight:normal;
+font-style:normal;
   color: #443235;
   background-color: #e6ddde;
 }
