@@ -84,26 +84,27 @@ main {
 }
 
 article {
+  display: contents;
   padding: 20px;
 }
 
 .stories>dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
 
 }
 
 .stories>dt {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: contents;
 }
 
 .stories>dd {
-  margin: 0;
-  padding: 0;
-  display: inline;
 }
 
 .stories>dt::after{
+  display: inline;
   border-bottom: 4px dotted #000;
   flex-grow: 1;
   content: '';
