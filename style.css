@@ -1,6 +1,6 @@
 @font-face {
-font-family: "American Typewriter";
-src: url("ATR.ttf");
+  font-family: "American Typewriter";
+  src: url("American Typewriter Regular.ttf");
 }
 
 header {
@@ -10,7 +10,7 @@ header {
 h1 {
   font-family: 'Alegreya SC', serif;
   font-size: 50px;
-  padding: 130px 0px 30px 0px;
+  padding: 60px 0px 20px 0px;
   text-align: center;
   letter-spacing: 11px;
 }
@@ -21,10 +21,14 @@ h2 {
   text-align: center;
 }
 
-.vignette {
+.vignetteTop {
   margin: auto;
-  max-width: 50%;
-  max-height: 50%;
+  transform: scale(-1);
+}
+
+.vignetteBottom {
+  margin: auto;
+  transform: scale(.5);
 }
 
 article {
@@ -37,17 +41,15 @@ p {
 
 body {
   font-family: 'Alegreya SC', serif;
-  font-weight:normal;
-font-style:normal;
+  font-weight: normal;
+  font-style: normal;
   color: #443235;
   background-color: #e6ddde;
 }
 
-main {
-  margin: 50px 230px 0px 230px;
-}
-
 ul {
+  display: flex;
+  justify-content: center;
   text-align: center;
   list-style: none;
   overflow: hidden;
@@ -60,11 +62,6 @@ li {
   font-family: 'Alegreya SC', serif;
   font-size: 30px;
   margin: 20px 0px 20px 0px;
-}
-
-li a {
-  color: rgb(20,20,20);
-  text-decoration : none;
   padding: 20px;
 }
 
@@ -82,65 +79,29 @@ nav {
   text-align: center;
 }
 
+main {
+  margin: 50px 230px 0px 230px;
+}
+
 article {
-  padding : 50px;
-  border-radius: 25px;
+  padding: 20px;
 }
 
-  article {
-    padding: 20px;
-  }
-}
-
-dl {
+.stories>dl {
   display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    overflow: visible;
+  justify-content: space-between;
 }
 
-dt {
-  border-bottom: 1px dotted #000;
-  display: inline-block;
-    min-width: 600px;
-
-  flex: 0 0 50%;
- text-overflow: ellipsis;
- overflow: hidden;
+.stories>dt {
 }
 
-dd {
-  display: inline;
+.stories>dd {
   margin: 0;
-
-  flex:0 0 50%;
- margin-left: auto;
- text-align: left;
- text-overflow: ellipsis;
- overflow: hidden;
+  padding: 0;
+  flex-grow: 1;
 }
 
-dd:after{
-  display: block;
-  content: '';
-}
-
-@media (min-width: 900px) {
-
-}
-
-@media (min-width: 1200px) {
-  body {
-
-  }
-}
-
-@media (min-width: 1800px) {
-  body {
-
-  }
-}
-
-@media query (700 < width < 1200){
-
+.stories>span {
+    border-bottom: 3px dotted #000;
+    flex-grow: 1;
 }
