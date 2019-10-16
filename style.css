@@ -88,20 +88,23 @@ article {
 }
 
 .stories>dl {
-  display: flex;
-  justify-content: space-between;
+
 }
 
 .stories>dt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .stories>dd {
   margin: 0;
   padding: 0;
-  flex-grow: 1;
+  display: inline;
 }
 
-.stories>span {
-    border-bottom: 3px dotted #000;
-    flex-grow: 1;
+.stories>dt::after{
+  border-bottom: 4px dotted #000;
+  flex-grow: 1;
+  content: '';
 }
