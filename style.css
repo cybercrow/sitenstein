@@ -47,7 +47,7 @@ body {
   background-color: #e6ddde;
 }
 
-ul {
+nav>ul {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -57,7 +57,7 @@ ul {
   padding: 0;
 }
 
-li {
+nav>ul>li {
   font-family: 'Marck Script', cursive;
   font-family: 'Alegreya SC', serif;
   font-size: 30px;
@@ -88,24 +88,31 @@ article {
   padding: 20px;
 }
 
-.stories>dl {
+.stories>div {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
+  flex : 0 0 50%; */
+}
 
+.stories>div::after{
+  border-bottom: 3px dotted #000;
+  content: '';
+  flex: 1 1 auto;
+  margin: 0;
+  order: 2;
 }
 
 .stories>dt {
-  display: contents;
+  flex: 0 1 auto;
+  margin: 0;
+  order: 1;
+  /* line-height: 1; */
 }
 
 .stories>dd {
-}
-
-.stories>dt::after{
-  display: inline;
-  border-bottom: 4px dotted #000;
-  flex-grow: 1;
-  content: '';
+  margin: 0;
+  flex : 0 1 auto;
+  order : 3;
 }
