@@ -97,7 +97,9 @@ article {
 }
 
 .stories>div::after{
-  border-bottom: 3px dotted #000;
+  border-bottom: 7px dotted transparent;
+  /* border-bottom: 3px dotted #000; */
+  border-image: url(dots.svg) 33% round;
   content: '';
   flex: 1 1 auto;
   margin: 0;
