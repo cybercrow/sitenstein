@@ -98,13 +98,10 @@ article {
 }
 
 .stories>div::after{
-  border-bottom: 0px solid rgba(0, 0, 0, 0);
-  border-width: 7px;
-  border-color: rgba(0, 0, 0, 0);
-  border-style: solid;
-  border-bottom-color: red;
+  border-width: 0px;
   border-bottom-width: 7px;
   border-bottom-style: solid;
+  border-bottom: 7px solid red;
   /* border-bottom: 3px dotted #000; */
   border-image: url(dots.svg) 33% round;
   content: '';
