@@ -1,0 +1,10 @@
+body {
+  font-family: 'Alegreya SC', serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #dedede;
+  background-color: #091336;
+  display: grid;
+  grid-template-columns: auto;
+}
+             title  article
